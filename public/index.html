@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALI CINEMA PLUS</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#090b12;color:white;font-family:Arial}
+header{background:#151927;padding:25px;text-align:center;border-bottom:2px solid #e5b52b}
+h1{color:#e5b52b;margin:0}
+p{color:#bbb}
+main{padding:25px;text-align:center}
+.card{background:#171c2b;padding:25px;border-radius:15px;max-width:450px;margin:25px auto}
+input{width:100%;padding:14px;border:0;border-radius:8px;margin:10px 0}
+button{background:#e5b52b;color:#111;border:0;padding:13px 25px;border-radius:8px;font-weight:bold}
+#msg{margin-top:15px}
+</style>
+</head>
+<body>
+<header>
+<h1>ALI CINEMA PLUS</h1>
+<p>عالم الترفيه بين يديك</p>
+</header>
+<main>
+<div class="card">
+<h2>أهلاً بك في سينما علي بلس 🎬</h2>
+<p>أدخل رمز الاشتراك الخاص بك للدخول</p>
+<input id="code" placeholder="أدخل رمز الاشتراك">
+<button onclick="checkCode()">دخول</button>
+<p id="msg"></p>
+</div>
+</main>
+<script>
+function checkCode(){
+document.getElementById('msg').textContent=
+'يرجى طلب تفعيل الرمز من إدارة الموقع.';
+}
+</script>
+</body>
+</html>
